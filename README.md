@@ -3,6 +3,7 @@
 ### About
 This is a very simple steam account checker, written by me as my first python project. It uses multi-threading and http/https proxy in format http://{ip}:{port} .
 On this checker I tested my knowledge of the python language, therefore, those who know do not swear much.
+Before using program, you need to write path in code, to your proxies.txt, combos.txt and good.txt
 ### Requirements
 - requests
 - rsa
