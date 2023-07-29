@@ -1,4 +1,4 @@
-# Steam-Checker-2023
+# Steam Checker 2023
 ![alt text](https://github.com/Fsocguy/Steam-Checker-2023/blob/main/Screenshot_1.png)
 ### About
 ENG:
