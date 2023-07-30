@@ -31,7 +31,7 @@ print(f'\n{datetime.now().strftime(Time_Output)}{Fore.GREEN}{Style.BRIGHT}[PROGR
 Combos_File_Path = 'combos.txt'
 if not os.path.exists(Combos_File_Path):   
     print(f'{datetime.now().strftime(Time_Output)}{Fore.RED}{Style.BRIGHT}[PROGRAM | Combos | ERROR]: {Fore.WHITE}{Style.BRIGHT}File {Fore.YELLOW}{Style.BRIGHT}combos.txt {Fore.WHITE}{Style.BRIGHT}not found ! Creating new file ...')
-    with open(Combos_File_Path, 'w') as F:
+    with open(Combos_File_Path, 'w', encoding='utf-8') as F:
         pass
     print(f'{datetime.now().strftime(Time_Output)}{Fore.RED}{Style.BRIGHT}[PROGRAM | Combos | ERROR]: {Fore.WHITE}{Style.BRIGHT}New file created! Fill it with combo lines and restart the program!')
     exit()
@@ -43,7 +43,7 @@ print(f'{datetime.now().strftime(Time_Output)}{Fore.GREEN}{Style.BRIGHT}[PROGRAM
 Proxies_File_Path = 'proxies.txt'
 if not os.path.exists(Proxies_File_Path):
     print(f'{datetime.now().strftime(Time_Output)}{Fore.RED}{Style.BRIGHT}[PROGRAM | Proxies | ERROR]: {Fore.WHITE}{Style.BRIGHT}File {Fore.YELLOW}{Style.BRIGHT}proxies.txt {Fore.WHITE}{Style.BRIGHT}not found ! Creating new file ...')
-    with open(Proxies_File_Path, 'w') as F:
+    with open(Proxies_File_Path, 'w', encoding='utf-8') as F:
         pass
     print(f'{datetime.now().strftime(Time_Output)}{Fore.RED}{Style.BRIGHT}[PROGRAM | Proxies | ERROR]: {Fore.WHITE}{Style.BRIGHT}New file created! Fill it with proxy lines and restart the program!')
     exit()
@@ -52,7 +52,7 @@ if not os.path.exists(Proxies_File_Path):
 def Main_Function(Login, Password):
     # Creating rotating proxy pool for requests | Создаем прокси пул для запросов
     Proxy_Pool = []
-    with open(Proxies_File_Path, 'r') as File:
+    with open(Proxies_File_Path, 'r', encoding='utf-8') as File:
         for Line in File:
             Line = Line.strip()
             # Categorizing proxies by type (HTTP, HTTPS, SOCKS) | Распределяем прокси по типам (HTTP, HTTPS, SOCKS)
@@ -401,7 +401,7 @@ def Main_Function(Login, Password):
                 Game_Name = Game['name']
                 Game_Hours = Game['hours']
                 File_Save_Output += f'\n[#{i}] - [Game: {Game_Name}] - [Played: {Game_Hours:.1f} hours]'
-                File_Save_Output += ' '
+                File_Save_Output += '\n\n'
             File.write(File_Save_Output)
 
     # If JSON Responce contains info about email аuthentication, printing this info to user | Если JSON ответ содержит информацию об двухфакторной аутентификации через EMAIL, выводим информацию об этом пользователю
@@ -429,7 +429,7 @@ def Main_Function(Login, Password):
         print(f'{Fore.RED}Status: Captcha\n')
 
 # Reading the lines from the combos.txt file
-with open(Combos_File_Path, 'r') as File:
+with open(Combos_File_Path, 'r', encoding='utf-8') as File:
     Lines = File.readlines()
     for Line in Lines:
         Login, Password = Line.strip().split(':')
