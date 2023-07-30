@@ -401,7 +401,7 @@ def Main_Function(Login, Password):
                 Game_Name = Game['name']
                 Game_Hours = Game['hours']
                 File_Save_Output += f'\n[#{i}] - [Game: {Game_Name}] - [Played: {Game_Hours:.1f} hours]'
-                File_Save_Output += '\n\n'
+            File_Save_Output += '\n\n'
             File.write(File_Save_Output)
 
     # If JSON Responce contains info about email аuthentication, printing this info to user | Если JSON ответ содержит информацию об двухфакторной аутентификации через EMAIL, выводим информацию об этом пользователю
