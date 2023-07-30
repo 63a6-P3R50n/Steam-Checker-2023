@@ -361,7 +361,7 @@ def Main_Function(Login, Password):
         Good_File_Path = 'good.txt'
         if not os.path.exists(Good_File_Path):
             print(f'{datetime.now().strftime(Time_Output)}{Fore.RED}{Style.BRIGHT}[PROGRAM | Good | ERROR]: {Fore.WHITE}{Style.BRIGHT}File {Fore.YELLOW}{Style.BRIGHT}good.txt {Fore.WHITE}{Style.BRIGHT}not found ! Creating new file ...')
-            with open(Good_File_Path, 'w') as F:
+            with open(Good_File_Path, 'w', encoding='utf-8') as F:
                 pass
 
         # Calling the functions | Вызываем функции
