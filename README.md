@@ -1,5 +1,5 @@
 # Steam Checker 2023
-![alt text](https://github.com/Fsocguy/Steam-Checker-2023/blob/main/Screenshot_1.png)
+![alt text](https://github.com/Fsocguy/Steam-Checker-2023/blob/main/CheckerPreview.png)
 ### About
 ENG:
 This is a very simple Steam account checker, written by me as my first python project. It's more stable than version 1.0 
