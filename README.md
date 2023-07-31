@@ -20,13 +20,13 @@ RU:
 ### Features
 ENG:
 - Stability
-- HTTP/S Proxy support
+- HTTP/S Proxy support (In format: {proxy type}://{ip}:{port})
 - Parsing detailed account information (Nickname, Level, Balance, KT, VAC, Limit, Games and more...)
 - Repeating the request in case of an error (except for the case with captcha)
 
 RU:
 - Стабильность
-- Поддержка HTTP/S прокси
+- Поддержка HTTP/S прокси (В формате: {proxy type}://{ip}:{port})
 - Парсинг более подробной информации об аккаунте (Никнейм, Уровень, Баланс, Бан сообщества, ВАК Бан, Лимит, Игры и многое другое...)
 - Повтор запроса в случае ошибки (кроме случая с капчей)
 ### Known problems
