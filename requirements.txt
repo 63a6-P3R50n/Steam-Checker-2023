@@ -1,8 +1,0 @@
-requests
-rsa
-base64
-json
-certifi
-fake-headers
-colorama
-beautifulsoup4
