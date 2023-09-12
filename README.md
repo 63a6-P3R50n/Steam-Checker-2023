@@ -6,7 +6,7 @@ This is a very simple steam account checker I created to test my knowledge of py
 I put the old versions of the checkers in the archive.
 
 [RU]:
-Это простой чекер аккаунтов Steam, написанный мой для проверки моих знаний языка python.
+Это простой чекер аккаунтов Steam, написанный мной для проверки моих знаний языка python.
 Прошлые версии чекера я перенес в архив.
 
 ### Features | Возможности
