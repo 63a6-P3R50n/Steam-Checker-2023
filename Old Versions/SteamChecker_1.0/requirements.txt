@@ -1,0 +1,7 @@
+requests
+rsa
+certifi
+fake_headers
+beautifulsoup4
+colorama
+lxml
