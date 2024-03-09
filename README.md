@@ -1,39 +1,27 @@
 # Steam Checker 2023
+
+English
+&nbsp;&nbsp;|&nbsp;&nbsp;
+<a href="https://github.com/63a6-P3R50n/Steam-Checker-2023/blob/main/README-ru.md">Русский</a>
+
+
 ![alt text](https://github.com/Fsocguy/Steam-Checker-2023/blob/main/Preview.png)
-### About | О чекере
-[ENG]:
-This is a very simple steam account checker I created to test my knowledge of python.
-I put the old versions of the checkers in the archive.
 
-[RU]:
-Это простой чекер аккаунтов Steam, написанный мной для проверки моих знаний языка python.
-Прошлые версии чекера я перенес в архив.
+# About
+`Steam Checker 2023` - project I wrote as my first job. It was originally intended for personal use, but to make it easier for others and to generally save work, I decided to move it to GitHub.
+I haven't worked on it much, so the checker is pretty easy to run and use.
 
-### Features | Возможности
-[ENG]:
-- Stability
-- HTTP/S, SOCKS4/5 (beta) proxy support
-- Parsing detailed infromation about valid account
-- Better UI
+# Features
+- Proxy support: `HTTP`, `HTTPS`, `SOCKS4`, `SOCKS5`
+- Integrated parser
+- User-friendly interface
 
-[RU]:
-- Стабильность
-- Поддержка HTTP/S, SOCKS4/5 (бета) прокси
-- Парсинг более подробной информации об аккаунте
-- Более удобный UI
-  
-### Known problems | Известные проблемы
-[ENG]:
-- The script can't solve the captcha yet
-- Due to the limitation on login post requests, the script will run slower
+# Known problems
+- Unable to bypass `captcha`
+- Partial proxy issues
+- Slow working speed due to limited server-side requests
 
-[RU]:
-- Скрипт пока не может решать капчу
-- В связи с ограничениями на post логин запросы, скрипт будет медленнее чекать вашу базу
+# Lastly
+Since this work was created by a person with very little experience in development, many errors and inaccuracies may be unknown to me. If you want to point out bugs, I will always listen to you!
 
-### In addition | В дополнение
-[ENG]:
-Since I am a beginner python-developer, I may not know many things, so if you are interested in this code and have suggestions on how I can improve it, or want to point out my mistakes, please contact me: dr9256228@gmail.com
-
-[RU]:
-Поскольку я начинающий python-разработчик, я могу не знать многих вещей, поэтому если вас заинтересовал этот код и у вас есть предложения, как я могу его улучшить, или вы хотите указать на мои ошибки, пожалуйста, свяжитесь со мной: dr9256228@gmail.com
+`P.S` *Since 04/01/2023, this project is no longer supported.*
